@@ -2,15 +2,15 @@ import React from "react";
 
 const Dashboard = ({ transactions }) => {
   const amounts = transactions.map((transaction) => transaction.amount);
-  const income = amounts
+  let income = amounts
     .filter((item) => item > 0)
     .reduce((p, c) => p + Math.abs(c), 0);
   console.log(income);
-  const expense = amounts
+  let expense = amounts
     .filter((item) => item < 0)
     .reduce((p, c) => p - Math.abs(c), 0);
   console.log(expense);
-  const balance = income + expense;
+  let balance = income + expense;
   // amounts.reduce((p, c) => p + Math.abs(c), 0);
   console.log(balance);
   if (!amounts) {
