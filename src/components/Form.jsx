@@ -18,7 +18,7 @@ const Form = ({ addTransactions, edit, updateTransaction }) => {
   useEffect(() => {
     setName(edit.text.text)
     setAmount(edit.text.amount)
-    console.log(name,amount)
+    // console.log(name,amount)
   }, [edit])
   return (
     <form

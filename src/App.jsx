@@ -45,7 +45,7 @@ function App() {
   };
 
   const addTransactions = (name, amount) => {
-    console.log(name, amount);
+    // console.log(name, amount);
     let newTransaction = [
       {
         id: crypto.randomUUID(),
@@ -68,7 +68,7 @@ function App() {
     );
     setEdit({ text: {}, isEdit: false });
   };
-  console.log(transactions);
+  // console.log(transactions);
   return (
     <>
       <div className="container  shadow w-50 p-0">
