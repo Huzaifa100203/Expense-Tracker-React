@@ -13,11 +13,11 @@ const Dashboard = ({ transactions }) => {
   let balance = income + expense;
   // amounts.reduce((p, c) => p + Math.abs(c), 0);
   console.log(balance);
-  if (!amounts) {
-    income = 0;
-    expense = 0;
-    balance = 0;
-  }
+  // if (!amounts) {
+  //   income = 0;
+  //   expense = 0;
+  //   balance = 0;
+  // }
   const formatAmount = (amount) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",

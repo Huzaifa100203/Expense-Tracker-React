@@ -33,7 +33,7 @@ function App() {
     // },
   ]);
   const [edit, setEdit] = useState({ text: {}, isEdit: false });
-
+   //Remove
   const removeTransaction = (id) => {
     setTransactions(
       transactions.filter((item) => {
@@ -43,7 +43,7 @@ function App() {
       })
     );
   };
-
+   //Add
   const addTransactions = (name, amount) => {
     // console.log(name, amount);
     let newTransaction = [
@@ -55,11 +55,11 @@ function App() {
     ];
     setTransactions([...newTransaction, ...transactions]);
   };
-
+   //Edit
   const editTransaction = (transaction) => {
     setEdit({ text: transaction, isEdit: true });
   };
-
+  //Update
   const updateTransaction = (oldId, name, amount) => {
     setTransactions(
       transactions.map((item) =>
